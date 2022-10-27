@@ -1,0 +1,20 @@
+<p>home works!</p>
+<button (click)="getProducts()" >Get Products.</button>
+<form (ngSubmit)="addProduct()">
+    <p>Title</p>
+    <input type="text" name="title" [(ngModel)]="product.category"  />
+
+    <p>category</p>
+    <input type="text" name="title" [(ngModel)]="product.category"  />
+
+    <p>image</p>
+    <input type="text" name="image" [(ngModel)]="product.image"  />
+
+    <p>description</p>
+    <input type="text" name="description" [(ngModel)]="product.description"  />
+
+    <p>price</p>
+    <input type="number" name="price" [(ngModel)]="product.price"  />
+    
+    <button type="submit" >Add Product.</button>
+</form>
